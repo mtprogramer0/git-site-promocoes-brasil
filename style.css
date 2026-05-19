@@ -14,20 +14,19 @@ body {
 }
 
 .content_all {
- height: 100vh;
+ height: 100dvh;
  width: 100vw;
-  height: 100dvh;
- width: 100dvw;
  background-image: url("assets/background.jpg");
- background-repeat: none;
- background-size: 100% 100%;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
 }
 
 
 header{
  height: 70px;
- width: 100vw;
  width: 100dvw;
+ width: 100vw;
  background-color: rgba(0, 0, 0, 0.6);
  display: flex;
  align-items: center;
@@ -63,19 +62,9 @@ header{
    font-weight: bold;
 }
 
-header > button {
- height: 25px;
- width: 70px;
- background-color: white;
- border-radius: 8px;
- border: none;
- background-color: gold
-}
-
 main {
  height: calc(100dvh - 70px);
- width: 100vh;
-  width: 100dvh;
+ width: 100vw;
  display: grid;
  grid-template: 20% 40% 40% / 1fr;
 }
@@ -91,7 +80,7 @@ main {
  color: white;
  font-family: "Montserrat", Arial, Helvetica, sans-serif;
  font-weight: bold;
- font-size: 2.1rem;
+ font-size: 1.8rem;
 }
 
 .container_upperText > p span {
@@ -188,71 +177,4 @@ main {
 .container_link > div svg {
     height: 25px;
     width: 25px;
-}
-
-.container_sair {
- position: absolute;
- top: 0;
- left: 0;
- height: 100%;
- width: 100%;
- background-color: rgba(0, 0, 0, 0.7);
- z-index: 50;
- opacity: 0;
- visibility: hidden;
-}
-
-.container_sobre {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- height: 500px;
- width: 370px;
- background-color: rgba(0, 0, 0, 0.6);
- border: 2px solid white;
- border-radius: 10px;
- z-index: 60;
- opacity: 0;
- visibility: hidden;
- transition: 0.3s ease;
- padding: 2rem;
- display: flex;
- align-items: center;
- justify-content: start;
- gap: 50px;
- flex-direction: column;
- overflow: visible;
-}
-
-.container_sobre > p {
- color: green;
- font-size: 2rem;
- font-family: "Montserrat", Arial, Helvetica, sans-serif;
- font-weight: bold;
- text-align: center;
- text-shadow: 0px 0px 5px green;
-}
-
-.container_sobre > p span {
- color: gold;
-text-shadow: 0px 0px 5px gold;
-}
-
-.container_sobre ul {
- width: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
- font-size: 1.6rem;
- color: white;
- gap: 1rem;
- font-style: italic;
- padding: 1rem;
-}
-
-.visible {
- opacity: 1;
- visibility: visible;
 }
