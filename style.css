@@ -16,6 +16,8 @@ body {
 .content_all {
  height: 100vh;
  width: 100vw;
+  height: 100dvh;
+ width: 100dvw;
  background-image: url("assets/background.jpg");
  background-repeat: none;
  background-size: 100% 100%;
@@ -24,7 +26,8 @@ body {
 
 header{
  height: 70px;
- width: 100%;
+ width: 100vw;
+ width: 100dvw;
  background-color: rgba(0, 0, 0, 0.6);
  display: flex;
  align-items: center;
@@ -70,8 +73,9 @@ header > button {
 }
 
 main {
- height: calc(100vh - 70px);
- width: 100vw;
+ height: calc(100dvh - 70px);
+ width: 100vh;
+  width: 100dvh;
  display: grid;
  grid-template: 20% 40% 40% / 1fr;
 }
@@ -190,8 +194,8 @@ main {
  position: absolute;
  top: 0;
  left: 0;
- height: 100vh;
- width: 100vw;
+ height: 100%;
+ width: 100%;
  background-color: rgba(0, 0, 0, 0.7);
  z-index: 50;
  opacity: 0;
